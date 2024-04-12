@@ -1,39 +1,39 @@
 {
-    "projecst": {
+    "basics": {
       "proyecto1": {
         "title": "Conmebol Eliminatorias 2026",
-        "description": "This is a description of project 1",
+        "description": "Este es un proyecto de una página web de las eliminatorias de la Conmebol para el mundial de 2026. Se utilizó HTML, CSS y JavaScript.",
         "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
         "link": "https://eliminatorias-mundial-2026.vercel.app/"
       },
-      "proyecto2": {
+      "proyecto2": {  
         "title": "Code Multi All",
-        "description": "This is a description of project 2",
-        "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
+        "description": "Landing page de una empresa de desarrollo web. Se utilizó Astro y Tailwind.",
+        "image": "https://via.placeholder.com/150",
         "link": "https://code-multi-all.vercel.app/"
       },
       "proyecto3": {
         "title": "LinkBio",
-        "description": "This is a description of project 3",
-        "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
+        "description": "Mi pagina de Links, Hecha con Python y el framework Reflex.",
+        "image": "https://via.placeholder.com/150",
         "link": "https://saul-dev.vercel.app/"
       },
       "proyecto4": {
         "title": "Guess the word",
-        "description": "This is a description of project 4",
-        "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
+        "description": "Juego de adivinar la palabra. Se utilizó HTML, CSS y JavaScript.",
+        "image": "https://via.placeholder.com/150",
         "link": "https://deft-bonbon-e07706.netlify.app/"
       },
       "proyecto5": {
         "title": "Random Quote Generator",
-        "description": "This is a description of project 5",
-        "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
+        "description": "Pagina web que genera frases de famosos. Se utilizó HTML, CSS y JavaScript.",
+        "image": "https://via.placeholder.com/150",
         "link": "https://extraordinary-zabaione-ed3b82.netlify.app/"
       },
       "proyecto6": {
         "title": "QR Code Generator",
-        "description": "This is a description of project 6",
-        "image": "https://eliminatorias-mundial-2026.vercel.app/assets/public/MoopUp.webp",
+        "description": "Generador de códigos QR. Se utilizó HTML, CSS y JavaScript.",
+        "image": "https://via.placeholder.com/150",
         "link": "https://resplendent-kangaroo-397d94.netlify.app/"
       }
     }
