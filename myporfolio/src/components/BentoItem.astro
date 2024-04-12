@@ -1,0 +1,43 @@
+---
+import Link from "../components/Icons/Link.astro";
+interface Props {
+  class?: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const { title, description, link } = Astro.props;
+
+---
+
+
+    <article
+      class={`
+        ${Astro.props.class}
+        relative rounded-xl
+        backdrop-blur-md
+        border border-black/10
+        shadow-inner shadow-white/10
+        overflow-hidden
+        group
+    `}
+    >
+      <div class="absolute bottom-0 top-0 z-10 h-full w-full" />
+      <slot name="image"/>
+      <div class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-4 text-lg md:p-6">
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <div>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+          >
+            <Link />
+          </a>
+        </div>
+      </div>
+    </article>
+

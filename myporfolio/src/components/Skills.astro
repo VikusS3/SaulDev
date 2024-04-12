@@ -1,0 +1,43 @@
+---
+import SkillBall from "./SkillBall.astro";
+import AstroIcons from "./Icons/Astro.astro";
+import Html from "./Icons/Html.astro";
+import Css from "./Icons/Css.astro";
+import JavaScript from "./Icons/JavaScript.astro";
+import Tailwind from "./Icons/Tailwind.astro";
+import Python from "./Icons/Python.astro";
+import Git from "./Icons/Git.astro";
+---
+
+<section class="w-full flex flex-col items-center justify-center mt-52" id="skills">
+  <h1 class="text-5xl font-bold">Mis Skills</h1>
+  <p class="mt-5 text-xl">
+    Estas son las tecnologías que he aprendido de <span
+      class="font-bold text-cyan-200"
+      >forma autodidacta
+    </span>a lo largo del tiempo.
+  </p>
+  <div class="flex flex-row justify-center items-center gap-10 mt-12">
+    <SkillBall class="w-20 h-20">
+      <AstroIcons />
+    </SkillBall>
+    <SkillBall class="w-24 h-24">
+      <Html />
+    </SkillBall>
+    <SkillBall class="w-28 h-28">
+      <Css />
+    </SkillBall>
+    <SkillBall class="w-32 h-32">
+      <JavaScript />
+    </SkillBall>
+    <SkillBall class="w-28 h-28">
+      <Tailwind />
+    </SkillBall>
+    <SkillBall class="w-24 h-24">
+      <Python />
+    </SkillBall>
+    <SkillBall class="w-20 h-20">
+      <Git />
+    </SkillBall>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+const ItemsNav = [
+  {
+    name: "Skills",
+    ariaLabel: "Skills",
+    url: "#skills",
+  },
+  {
+    name: "Projectos",
+    ariaLabel: "Projectos",
+    url: "#",
+  },
+  {
+    name: "Sobre Mi",
+    ariaLabel: "Sobre Mi",
+    url: "#",
+  },
+];
+---
+
+<header
+  class="header-animate py-6 flex justify-center items-center w-full mx-auto border-b-2 z-10"
+>
+  <nav class="flex flex-row items-center justify-center gap-20 text-2xl">
+    {
+      ItemsNav.map((link) => (
+        <a
+          class="transition hover:text-cyan-400/100 duration-300 ease-in-out"
+          aria-label={link.ariaLabel}
+          href={link.url}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<style>
+  .header-animate {
+    animation: adapt-nav both;
+    animation-timeline: scroll();
+    position: sticky;
+    backdrop-filter: blur(10px);
+    top: 0;
+  }
+
+  @keyframes adapt-nav {
+    0% {
+      padding: 1.5rem;
+    }
+    100% {
+      padding: 1rem;
+    }
+  }
+</style>

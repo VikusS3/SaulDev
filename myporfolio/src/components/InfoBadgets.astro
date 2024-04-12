@@ -1,0 +1,27 @@
+---
+const info = [
+  {
+    number: "1",
+    title: "Año de experiencia",
+  },
+  {
+    number: "+4",
+    title: "Proyectos completados",
+  },
+  {
+    number: "+6",
+    title: "Tecnologias aprendidas",
+  },
+];
+---
+
+<div class="flex flex-row items-center justify-center gap-14">
+  {
+    info.map((item) => (
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-xl font-bold text-cyan-300/100">{item.number}</h1>
+        <span class=" opacity-70">{item.title}</span>
+      </div>
+    ))
+  }
+</div>
