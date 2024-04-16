@@ -9,15 +9,20 @@ import Python from "./Icons/Python.astro";
 import Git from "./Icons/Git.astro";
 ---
 
-<section class="w-full flex flex-col items-center justify-center mt-52" id="skills">
+<section
+  class="w-full flex flex-col items-center justify-center mt-52"
+  id="skills"
+>
   <h1 class="text-5xl font-bold">Mis Skills</h1>
-  <p class="mt-5 text-xl">
+  <p class="mt-5 text-xl text-center md:text-pretty">
     Estas son las tecnologías que he aprendido de <span
-      class="font-bold text-cyan-200"
+      class="font-bold text-[#06fdff]"
       >forma autodidacta
     </span>a lo largo del tiempo.
   </p>
-  <div class="md:flex md:flex-row justify-center items-center gap-10 mt-12 grid grid-cols-3">
+  <div
+    class="lg:flex lg:flex-row justify-center items-center gap-10 mt-12 grid grid-cols-3"
+  >
     <SkillBall class="w-20 h-20">
       <AstroIcons />
     </SkillBall>
@@ -30,14 +35,14 @@ import Git from "./Icons/Git.astro";
     <SkillBall class="w-32 h-32">
       <JavaScript />
     </SkillBall>
-    <SkillBall class="w-28 h-28">
-      <Tailwind />
-    </SkillBall>
-    <SkillBall class="w-24 h-24">
-      <Python />
-    </SkillBall>
-    <SkillBall class="w-20 h-20">
-      <Git />
-    </SkillBall>
-  </div>
+      <SkillBall class="w-28 h-28">
+        <Tailwind />
+      </SkillBall>
+      <SkillBall class="w-24 h-24">
+        <Python />
+      </SkillBall>
+      <SkillBall class="w-20 h-20">
+        <Git />
+      </SkillBall>
+
 </section>

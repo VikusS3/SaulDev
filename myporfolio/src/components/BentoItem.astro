@@ -8,12 +8,10 @@ interface Props {
 }
 
 const { title, description, link } = Astro.props;
-
 ---
 
-
-    <article
-      class={`
+<article
+  class={`
         ${Astro.props.class}
         relative rounded-xl
         backdrop-blur-md
@@ -22,22 +20,34 @@ const { title, description, link } = Astro.props;
         overflow-hidden
         group
     `}
-    >
-      <div class="absolute z-10 h-full w-full"/>
-      <slot name="image"/>
-      <div class="relative z-20 flex h-full select-none flex-col justify-start gap-1 p-4 text-lg md:p-6">
-        <h1 class="mb-4 text-balance text-3xl font-semibold uppercase text-white">{title}</h1>
-        <p class="max-w-xl text-base md:text-lg">{description}</p>
-        <div>
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            role="link"
-          >
-            <Link />
-          </a>
-        </div>
-      </div>
-    </article>
+>
+  <div class="absolute z-10 h-full w-full"></div>
+  <slot name="image" />
+  <div
+    class="relative z-20 flex h-full select-none flex-col justify-between gap-1 p-4 text-lg md:p-6"
+  >
+    <div>
+      <h1
+        class=`
+      mb-4 text-balance md:text-3xl text-2xl font-semibold uppercase text-white`
+      >
+        {title}
+      </h1>
 
+      <p class="max-w-xl text-base md:text-lg font-semibold text-pretty">
+        {description}
+      </p>
+      <slot name="footer" class="flex flex-row" />
+    </div>
+
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      role="link"
+      class="flex items-center gap-2 text-white hover:text-cyan-500 transition-colors duration-200 ease-in-out w-6 h-6 md:w-8 md:h-8"
+    >
+      <Link />
+    </a>
+  </div>
+</article>

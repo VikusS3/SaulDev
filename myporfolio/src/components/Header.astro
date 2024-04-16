@@ -8,7 +8,7 @@ const ItemsNav = [
   {
     name: "Projectos",
     ariaLabel: "Projectos",
-    url: "#",
+    url: "#projects",
   },
   {
     name: "Sobre Mi",
@@ -19,9 +19,9 @@ const ItemsNav = [
 ---
 
 <header
-  class="header-animate py-6 flex justify-center items-center w-full mx-auto border-b-2 z-10"
+  class="header-animate flex justify-center items-center w-full mx-auto border-b-2 z-10"
 >
-  <nav class="flex flex-row items-center justify-center gap-20 text-2xl">
+  <nav class="flex flex-row items-center justify-center gap-20 text-xl">
     {
       ItemsNav.map((link) => (
         <a
@@ -47,10 +47,10 @@ const ItemsNav = [
 
   @keyframes adapt-nav {
     0% {
-      padding: 1.5rem;
+      padding: 1.2rem;
     }
     100% {
-      padding: 1rem;
+      padding: 0.8rem;
     }
   }
 </style>

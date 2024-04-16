@@ -19,7 +19,7 @@
         "link": "https://saul-dev.vercel.app/"
       },
       "proyecto4": {
-        "title": "Guess the word",
+        "title": "Word Scramblee",
         "description": "Juego de adivinar la palabra. Se utilizó HTML, CSS y JavaScript.",
         "image": "https://via.placeholder.com/150",
         "link": "https://deft-bonbon-e07706.netlify.app/"
@@ -36,6 +36,11 @@
         "image": "https://via.placeholder.com/150",
         "link": "https://resplendent-kangaroo-397d94.netlify.app/"
       }
+    },
+    "socials":{
+      "twitter": "https://twitter.com/saul_dev",
+      "linkedin": "https://www.linkedin.com/in/saul-dev/",
+      "github": "https://github.com/VikusS3"
     }
   }
   

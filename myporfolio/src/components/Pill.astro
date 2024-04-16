@@ -1,0 +1,15 @@
+---
+interface Props {
+  class?: string;
+}
+---
+
+<div class="flex flex-row justify-start items-center gap-4 mt-3">
+  <div
+    class=`
+  ${Astro.props.class}
+    p-3 w-max rounded-lg border backdrop-blur-sm`
+  >
+    <slot />
+  </div>
+</div>

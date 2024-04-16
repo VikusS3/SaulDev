@@ -5,42 +5,43 @@ import Linkedin from "./Icons/Linkedin.astro";
 import InfoBadgets from "./InfoBadgets.astro";
 import Badge from "./Badge.astro";
 import ButtonsHero from "./ButtonsHero.astro";
-import { Image } from "astro:assets";
+import {socials} from '@data'
+
+const {github, linkedin, twitter} = socials
+
 ---
 
 <section class="w-full flex flex-col items-center justify-center py-10 mt-20">
   <div class="flex flex-row justify-center items-center gap-10">
     <div class="border-4 rounded-3xl p-1">
-      <Image
+      <img
         src="/SAUL.webp"
         alt="Imagen de Saul Orellana"
-        class="max-w-full max-h-full object-cover rounded-3xl shadow-lg"
-        width={300}
-        height={300}
+        class="max-w-[300px] max-h-[300px] object-cover rounded-3xl shadow-lg grayscale hover:grayscale-0 transition duration-500 ease-in-out"
       />
     </div>
     <div class="flex gap-5 flex-col w-1/2">
       <div class="flex md:flex-row gap-8 md:items-center flex-col">
-        <h1 class="text-6xl">Saul Orellana</h1>
+        <h1 class="sm:text-6xl text-3xl">Saul Orellana</h1>
         <Badge>Disponible para Trabajar</Badge>
       </div>
 
-      <p class="text-xl text-gray-200">
+      <p class="sm:text-xl text-wrap text-gray-200">
         Desarrollador frontend de <span class="text-red-500">Perú</span>.
         Especializado en el desarrollo de paginas web estáticas y dinámicas
       </p>
       <div class="flex flex-row items-center justify-start gap-5">
-        <a href="https://github.com/VikusS3" target="_blank" aria-label="Github" rel="noopener noreferrer" role="link">
+        <a href={github} target="_blank" aria-label="Github" rel="noopener noreferrer" role="link">
           <Github
             class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
-          /></a
+         </a> /></a
         >
-        <a href="https://www.linkedin.com/in/fsocdev/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer" role="link">
+        <a href={linkedin} aria-label="Linkedin" target="_blank" rel="noopener noreferrer" role="link">
           <Linkedin
             class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
           /></a
         >
-        <a href="https://twitter.com/saul_dev21" aria-label="Twitter" target="_blank" rel="noopener noreferrer" role="link">
+        <a href={twitter} aria-label="Twitter" target="_blank" rel="noopener noreferrer" role="link">
           <X
             class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
           /></a
