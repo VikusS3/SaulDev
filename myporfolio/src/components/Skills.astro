@@ -21,43 +21,57 @@ import Github from "./Icons/Github.astro";
     </span>a lo largo del tiempo.
   </p>
   <div
-    class="flex flex-row justify-center items-center sm:gap-10 gap-6 mt-12 w-full"
+    class="sm:flex sm:flex-row justify-center items-center sm:gap-10 gap-6 mt-12 w-full mobile"
   >
-    <SkillBall class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 hover:text-orange-300">
+    <SkillBall
+      class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 hover:text-orange-300 mobile-1"
+    >
       <AstroPill class="md:w-12 md:h-12 sm:w-8 sm:h-8 w-8 h-8" />
     </SkillBall>
     <SkillBall
-      class="md:w-24 md:h-24 sm:w-[4.5rem] sm:h-[4.5rem] w-16 h-16 hover:text-cyan-400 "
+      class="md:w-24 md:h-24 sm:w-[4.5rem] sm:h-[4.5rem] w-16 h-16 hover:text-cyan-400 mobile-2"
     >
       <CssPill class="md:w-16 md:h-16 sm:h-12 sm:w-12 w-10 h-10" />
     </SkillBall>
     <SkillBall
-      class="md:w-28 md:h-28 sm:w-24 sm:h-24 w-20 h-20 hover:text-orange-400 "
+      class="md:w-28 md:h-28 sm:w-24 sm:h-24 w-20 h-20 hover:text-orange-400 mobile-3"
     >
       <HtmlPill class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12" />
     </SkillBall>
-    <SkillBall class="md:w-32 md:h-32 sm:w-28 sm:h-28 w-24 h-24 hover:text-yellow-400">
+    <SkillBall
+      class="md:w-32 md:h-32 sm:w-28 sm:h-28 w-24 h-24 hover:text-yellow-400 mobile-4"
+    >
       <JavaScriptPill class="md:w-24 md:h-24 sm:w-20 sm:h-20 w-16 h-16" />
     </SkillBall>
-    <SkillBall class="md:w-28 md:h-28 sm:w-24 sm:h-24 w-20 h-20 hover:text-blue-500">
+    <SkillBall
+      class="md:w-28 md:h-28 sm:w-24 sm:h-24 w-20 h-20 hover:text-blue-500 mobile-5"
+    >
       <Tailwind class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-14 h-14" />
     </SkillBall>
-    <SkillBall class="md:w-24 md:h-24 sm:w-[4.5rem] sm:h-[4.5rem] w-16 h-16 hover:text-yellow-200/100">
+    <SkillBall
+      class="md:w-24 md:h-24 sm:w-[4.5rem] sm:h-[4.5rem] w-16 h-16 hover:text-yellow-200/100 mobile-6"
+    >
       <Python class="md:w-16 md:h-16 sm:h-12 sm:w-12 w-10 h-10" />
     </SkillBall>
-    <SkillBall class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 hover:text-slate-300">
+    <SkillBall
+      class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 hover:text-slate-300 mobile-7"
+    >
       <Github class="md:w-12 md:h-12 sm:w-8 sm:h-8 w-8 h-8" />
     </SkillBall>
   </div>
 </section>
 
 <style>
-  
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 640px) {
     .mobile {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      place-items: center;
+      align-items: center;
+      grid-row-gap: 0px;
     }
+    
   }
 </style>
