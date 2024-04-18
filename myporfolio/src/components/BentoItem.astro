@@ -29,12 +29,12 @@ const { title, description, link } = Astro.props;
     <div>
       <h1
         class=`
-      mb-4 text-balance lg:text-3xl text-xl font-semibold uppercase text-white`
+      mb-4 text-balance font-semibold uppercase text-white lg:text-2xl md:text-xl text-base`
       >
         {title}
       </h1>
 
-      <p class="max-w-xl text-base md:text-lg font-semibold text-pretty">
+      <p class="max-w-2xl text-base md:text-lg font-semibold text-pretty">
         {description}
       </p>
       <slot name="footer" class="flex flex-row" />

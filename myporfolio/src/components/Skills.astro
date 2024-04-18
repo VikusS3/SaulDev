@@ -21,7 +21,9 @@ import Github from "./Icons/Github.astro";
     </span>a lo largo del tiempo.
   </p>
   <div
-    class="sm:flex sm:flex-row justify-center items-center sm:gap-10 gap-6 mt-12 w-full mobile"
+    class="sm:flex sm:flex-row justify-center items-center sm:gap-10 gap-6 mt-12 w-full mobile 
+    my_animate
+    "
   >
     <SkillBall
       class="md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 hover:text-orange-300 mobile-1"
@@ -72,6 +74,22 @@ import Github from "./Icons/Github.astro";
       align-items: center;
       grid-row-gap: 0px;
     }
-    
+  }
+
+  .my_animate {
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range:contain 0% cover 30%;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style>

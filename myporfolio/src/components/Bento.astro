@@ -9,28 +9,29 @@ import AstroPill from "./Icons/Pills/AstroPill.astro";
 import TailwindPill from "./Icons/Pills/TailwindPill.astro";
 import CssPill from "./Icons/Pills/CssPill.astro";
 import HtmlPill from "./Icons/Pills/HtmlPill.astro";
-import Image from "astro/components/Image.astro";
 
 const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
   basics;
 ---
 
-<div class="grid max-w-[1100px] md:grid-cols-4 md:grid-rows-4 gap-2 mt-10">
+<div class="grid max-w-[1200px] md:grid-cols-4 md:grid-rows-4 gap-2 mt-10">
   <BentoItem
     class="md:col-span-2 md:row-span-2 sm:col-span-4 col-span-2"
     title={proyecto2.title}
     description={proyecto2.description}
     link={proyecto2.link}
   >
-    <img
-      slot="image"
-      loading="lazy"
-      alt={proyecto2.title}
-      class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full
-    bg-cover bg-center bg-no-repeat opacity-90 duration-1000 ease-in-out group-hover:scale-110"
-      src="/codemultiall.avif"
-    />
+    <picture slot="image">
+      <source srcset="/code-multi-all-small.webp" />
+      <img
+        loading="lazy"
+        alt={proyecto2.title}
+        class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full
+  bg-cover bg-center bg-no-repeat opacity-90 duration-1000 ease-in-out group-hover:scale-110"
+        src="/code-multi-all-medium.webp"
+      />
+    </picture>
     <footer
       slot="footer"
       class="flex flex-row items-center justify-start gap-3"
@@ -49,15 +50,20 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
     description={proyecto4.description}
     link={proyecto4.link}
   >
-    <img
-      loading="lazy"
-      alt={proyecto4.title}
-      slot="image"
-      class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      src="/wordscramble.avif"
-    />
+    <picture slot="image">
+      <source media="(max-width:300px)" srcset="/word-scramble-1.webp" />
+      <source media="(max-width:740px)" srcset="/word-scramble-2.webp" />
+
+      <img
+        loading="lazy"
+        alt={proyecto4.title}
+        class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        src="/wordscramble.avif"
+      />
+    </picture>
+
     <footer
       slot="footer"
       class="flex flex-row items-center justify-start gap-3"
@@ -74,20 +80,25 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
     </footer>
   </BentoItem>
   <BentoItem
-  class="md:col-span-1 md:row-span-1 col-span-2"
+    class="md:col-span-1 md:row-span-1 col-span-2"
     title={proyecto3.title}
     description={proyecto3.description}
     link={proyecto3.link}
   >
-    <img
-      loading="eager"
-      slot="image"
-      alt={proyecto3.title}
-      class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      src="/link.png"
-    />
+    <picture slot="image">
+      <source media="(max-width:300px)" srcset="/link-small.webp" />
+      <source media="(max-width:740px)" srcset="/link-medium.webp" />
+
+      <img
+        loading="eager"
+        alt={proyecto3.title}
+        class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        src="/link.png"
+      />
+    </picture>
+
     <footer slot="footer" class="flex flex-row gap-3">
       <Pill class="py-[18px]">
         <Reflex />
@@ -98,63 +109,71 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
     </footer>
   </BentoItem>
   <BentoItem
-  class="md:row-span-1 md:col-span-1 col-span-2"
+    class="md:row-span-1 md:col-span-1 col-span-2"
     title={proyecto5.title}
     description={proyecto5.description}
     link={proyecto5.link}
   >
-    <img
-      slot="image"
-      alt={proyecto5.title}
-      loading="eager"
-      class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      src="/random.png"
-    />
+    <picture slot="image">
+      <source media="(max-width:300px)" srcset="/random-quote-medium.webp" />
+      <source media="(max-width:740px)" srcset="/random-quote-small.webp" />
+      <img
+        alt={proyecto5.title}
+        loading="eager"
+        class="background transition-scale absolute bottom-0 left-0 top-0
+  -z-10 h-full w-full
+  bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        src="/random.png"
+      />
+    </picture>
+
     <footer
       slot="footer"
       class="flex flex-row items-center justify-start gap-2"
     >
-    <Pill>
-      <JavaScriptPill />
-    </Pill>
-    <Pill>
-      <CssPill />
-    </Pill>
-    <Pill>
-      <HtmlPill />
-    </Pill>
+      <Pill>
+        <JavaScriptPill />
+      </Pill>
+      <Pill>
+        <CssPill />
+      </Pill>
+      <Pill>
+        <HtmlPill />
+      </Pill>
     </footer>
   </BentoItem>
   <BentoItem
-  class="md:col-span-1 md:row-span-1 col-span-2"
+    class="md:col-span-1 md:row-span-1 col-span-2"
     title={proyecto6.title}
     description={proyecto6.description}
     link={proyecto6.link}
   >
-    <img
-      slot="image"
-      alt={proyecto6.title}
-      loading="eager"
-      class="background transition-scale absolute bottom-0 left-0 top-0
+    <picture slot="image">
+      <source media="(max-width:300px)" srcset="/qr-medium.webp" />
+      <source media="(max-width:740px)" srcset="/qr-small.webp" />
+      <img
+        alt={proyecto6.title}
+        loading="eager"
+        class="background transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full
     bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      src="/qr.png"
-    />
+        src="/qr.png"
+      />
+    </picture>
+
     <footer
       slot="footer"
       class="flex flex-row items-center justify-start gap-3"
     >
-    <Pill>
-      <JavaScriptPill />
-    </Pill>
-    <Pill>
-      <CssPill />
-    </Pill>
-    <Pill>
-      <HtmlPill />
-    </Pill>
+      <Pill>
+        <JavaScriptPill />
+      </Pill>
+      <Pill>
+        <CssPill />
+      </Pill>
+      <Pill>
+        <HtmlPill />
+      </Pill>
     </footer>
   </BentoItem>
   <BentoItem
@@ -163,28 +182,31 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
     description={proyecto1.description}
     link={proyecto1.link}
   >
-    <img
-      slot="image"
-      alt={proyecto1.title}
-      loading="lazy"
-      class="background transition-scale absolute bottom-0 left-0 top-0
+    <picture slot="image">
+      <source media="(max-width:840px)" srcset="/conmebol-medium.webp" />
+      <img
+        alt={proyecto1.title}
+        loading="lazy"
+        class="background transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full
     bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      src={proyecto1.image}
-    />
+        src={proyecto1.image}
+      />
+    </picture>
+
     <footer
       slot="footer"
       class="flex flex-row items-center justify-start gap-3"
     >
-    <Pill>
-      <JavaScriptPill />
-    </Pill>
-    <Pill>
-      <CssPill />
-    </Pill>
-    <Pill>
-      <HtmlPill />
-    </Pill>
+      <Pill>
+        <JavaScriptPill />
+      </Pill>
+      <Pill>
+        <CssPill />
+      </Pill>
+      <Pill>
+        <HtmlPill />
+      </Pill>
     </footer>
   </BentoItem>
 </div>
