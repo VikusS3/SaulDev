@@ -4,7 +4,6 @@ import "@fontsource-variable/onest";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
-import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
   description: string;
@@ -19,6 +18,33 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="Astro, portfolio, sauldev, desarrollador web, Frontend"
+    />
+    <meta name="author" content="SaulDev" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Soy SaulDev, un desarrollador web frontend, me encanta crear sitios web y aplicaciones web, soy un apasionado de la tecnología y la programación."
+    />
+    <meta property="og:title" content="SaulDev - FrontEnd Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/MoopUb.avif" />
+    <meta property="og:site_name" content="SaulDev - FrontEnd Developer" />
+    <meta property="og:url" content="https://sauldev-portfolio.vercel.app/" />
+    <meta
+      property="og:description"
+      content="Soy SaulDev, un desarrollador web frontend, me encanta crear sitios web y aplicaciones web, soy un apasionado de la tecnología y la programación."
+    />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@saul_dev21">
+    <meta name="twitter:title" content="SaulDev - FrontEnd Developer">
+    <meta name="twitter:description" content="Soy SaulDev, un desarrollador web frontend, me encanta crear sitios web y aplicaciones web, soy un apasionado de la tecnología y la programación.">
+    <meta name="twitter:image" content="/MoopUb.avif">
+
+    <link rel="canonical" href="https://sauldev-portfolio.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>

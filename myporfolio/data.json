@@ -8,7 +8,7 @@
     },
     "proyecto2": {
       "title": "Code Multi All",
-      "description": "Landing page de una empresa de desarrollo web. Se utilizó Astro y Tailwind.",
+      "description": "Landing page de una empresa que brinda servicios de desarrollo web, creacion de scripts, consultorias y mas. Hecho con Astro y TailwindCSS.",
       "image": "https://via.placeholder.com/150",
       "link": "https://code-multi-all.vercel.app/"
     },
@@ -20,19 +20,19 @@
     },
     "proyecto4": {
       "title": "Word Scramblee",
-      "description": "Juego de adivinar la palabra. Se utilizó HTML, CSS y JavaScript.",
+      "description": "Juego de adivinar la palabra.Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://deft-bonbon-e07706.netlify.app/"
     },
     "proyecto5": {
       "title": "Random Quote Generator",
-      "description": "Pagina web que genera frases de famosos. Se utilizó HTML, CSS y JavaScript.",
+      "description": "Pagina web que genera frases de famosos. Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://extraordinary-zabaione-ed3b82.netlify.app/"
     },
     "proyecto6": {
       "title": "QR Code Generator",
-      "description": "Generador de códigos QR. Se utilizó HTML, CSS y JavaScript.",
+      "description": "Generador de códigos QR. Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://resplendent-kangaroo-397d94.netlify.app/"
     }
