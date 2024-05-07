@@ -1,16 +1,38 @@
 ---
 import Bento from "./Bento.astro";
+import { basics } from "@data";
+import ProjectItem from "./ProjectItem.astro";
+
+const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
+  basics;
 ---
 
-<section class="w-full flex-col flex justify-center items-center mt-60 my_animate" id="projects">
+<section
+  class="w-full flex-col flex justify-center items-center mt-60 animate-blink [animation-range:0px_600px] [animation-timeline:view()]"
+  id="projects"
+>
   <h1 class="text-5xl font-bold">Mis Projectos</h1>
   <p class="text-xl mt-5">
-    Estos son los proyectos que he realizado con esfuerzo y dedicación. 
+    Estos son los proyectos que he realizado con esfuerzo y dedicación.
   </p>
   <p class="text-xl mt-5">
-    Cada uno
-    me ha ayudado <span class="font-bold text-[#06fdff]">a mejorar mis habilidade </span>a mejorar mis habilidades en diferentes tecnologías.
+    Cada uno me ha ayudado <span class="font-bold text-[#06fdff]"
+      >a mejorar mis habilidade
+    </span>a mejorar mis habilidades en diferentes tecnologías.
   </p>
-  <Bento />
+  <div class="px-5 sm:px-8 md:px-20 mt-10 flex flex-col flex-wrap gap-10">
+    {
+      [proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6]
+        .slice(0, 3)
+        .map((proyecto) => (
+          <ProjectItem
+            title={proyecto.title}
+            description={proyecto.description}
+            image={proyecto.image}
+            link={proyecto.link}
+            tecnologies={proyecto.tecnologias}
+          />
+        ))
+    }
+  </div>
 </section>
-

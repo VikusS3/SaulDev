@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -61,11 +61,11 @@ const { title, description } = Astro.props;
   html {
     font-family: "Onest Variable", system-ui;
     scroll-behavior: smooth;
+    background-color: #000000;
   }
   body {
     display: flex;
     flex-direction: column;
-    overscroll-behavior: none;
-    min-width: 100vh;
+    width: 100%;
   }
 </style>

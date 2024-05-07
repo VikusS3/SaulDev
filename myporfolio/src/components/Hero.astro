@@ -12,25 +12,25 @@ const {github, linkedin, twitter} = socials
 ---
 
 <section class="w-full flex flex-col items-center justify-center py-10 mt-20 animate-fade-in">
-  <div class="flex flex-row justify-center items-center gap-10">
-    <div class="border-4 rounded-3xl p-1 mb-20">
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+    <div class="border-4 rounded-3xl p-1 sm:mb-32 mb-0">
       <img
         src="/SAUL.webp"
         alt="Imagen de Saul Orellana"
-        class="max-w-[150px] max-h-[150px] object-cover rounded-3xl shadow-lg grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+        class="w-20 rounded-3xl shadow-lg grayscale hover:grayscale-0 transition duration-500 ease-in-out"
       />
     </div>
-    <div class="flex gap-5 flex-col w-1/2">
-      <div class="flex md:flex-row gap-8 md:items-center flex-col">
-        <h1 class="sm:text-6xl text-3xl">Saul Orellana</h1>
+    <div class="flex gap-5 flex-col w-full sm:w-1/2 text-center sm:text-left">
+      <div class="flex gap-8 md:items-center sm:flex-row flex-col">
+        <h1 class="sm:text-6xl text-3xl text-text-100">Saul Orellana</h1>
         <Badge>Disponible para Trabajar</Badge>
       </div>
 
-      <p class="sm:text-xl text-wrap text-gray-200">
+      <p class="sm:text-xl text-wrap text-text-200">
         Desarrollador frontend de <span class=" text-[#f5cdcd]">Perú</span>.
         Especializado en el desarrollo de paginas web estáticas y dinámicas
       </p>
-      <div class="flex flex-row items-center justify-start gap-5">
+      <div class="flex flex-row items-center justify-center sm:justify-start gap-5">
         <a href={github} target="_blank" aria-label="Github" rel="noopener noreferrer" role="link">
           <Github
             class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"

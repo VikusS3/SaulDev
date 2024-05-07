@@ -1,0 +1,74 @@
+---
+import Github from "./Icons/Github.astro";
+import Link from "./Icons/Link.astro";
+import Pill from "./Pill.astro";
+
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  tecnologies: string[];
+  github?: string;
+}
+
+const { title, description, image, link, tecnologies, github } = Astro.props;
+
+---
+<article class="flex flex-col sm:flex-row gap-10 max-w-[1100px]">
+  <picture class="max-w-[500px]">
+    <a
+      href={link}
+      role="link"
+      aria-label=`Ver proyecto ${title}`
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img src={image} alt={title} class="w-full rounded-lg" />
+    </a>
+  </picture>
+  <main class="flex flex-col gap-4 justify-between">
+    <section class="w-full mt-5">
+        {
+            tecnologies && (
+              <ul class="flex gap-5 mb-4 ">
+                {tecnologies.map((tecnology) => (
+                  <li >
+                    <Pill>{tecnology}</Pill>
+                  </li>
+                ))}
+              </ul>
+            )
+          }
+      <div class="flex flex-col gap-5">
+        <h2 class="text-2xl text-text-100">{title}</h2>
+        <p class="text-md text-text-100">{description}</p>
+      </div>
+    </section>
+    <footer class="flex gap-8 mb-5">
+      <a
+        href={link}
+        role="link"
+        aria-label=`Ver proyecto ${title}`
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-text-200 flex justify-center items-center gap-1 cursor-pointer"
+      >
+        <Link />
+        Demo
+      </a>
+      <a
+        href={github}
+        role="link"
+        aria-label=`Ir al repositorio de ${title}`
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-text-200 flex justify-center items-center gap-1 cursor-pointer"
+      >
+        <Github />
+        Proyecto
+      </a>
+    </footer>
+  </main>
+</article>

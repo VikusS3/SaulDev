@@ -1,19 +1,31 @@
 ---
-interface Props{
-    class?: string;
-    name:string;
+interface Props {
+  class?: string;
+  name: string;
 }
 
-const {name} = Astro.props
+const { name } = Astro.props;
 ---
 
-<div class=` 
+<div
+  class=` 
     ${Astro.props.class}
-    bg-[#1f1f1f] rounded-lg p-5 flex flex-col justify-start items-center gap-4 max-w-[300px] h-[300px]
-    hover:scale-105 transition-transform duration-300 ease-in-out hover:text-[#ffffff] hover:bg-[#2f2f2f]
-    `>
-    <h1 class="text-4xl font-semibold text-[#fcfcfc]">{name}</h1>
-    <div class="flex flex-row justify-center items-center flex-wrap text-[#d6d6d6] gap-2">
-        <slot />
-    </div>
+    bg-bg-200 rounded-lg p-5 flex flex-col justify-start items-center gap-4 w-auto h-auto sm:max-w-[300px] sm:h-[300px]
+    hover:scale-105 transition-transform duration-300 ease-in-out hover:text-[#ffffff] hover:bg-bg-300
+    `
+>
+  <h1 class="text-4xl font-semibold text-text-100">{name}</h1>
+  <div
+    class="sm:flex sm:flex-row sm:flex-wrap justify-center items-center text-text-200 gap-2 grid grid-cols-3 grid-special"
+  >
+    <slot />
+  </div>
 </div>
+
+<style>
+  @media screen and (max-width: 280px) {
+    .grid-special {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+  }
+</style>

@@ -21,11 +21,11 @@ const ItemsNav = [
 <header
   class="header-animate flex justify-center items-center w-full mx-auto border-b-2 z-10"
 >
-  <nav class="flex flex-row items-center justify-center gap-20 text-xl">
+  <nav class="flex flex-row items-center justify-center gap-12 sm:gap-20 text-xl">
     {
       ItemsNav.map((link) => (
         <a
-          class="transition hover:text-cyan-400/100 duration-300 ease-in-out "
+          class="transition hover:text-cyan-400/100 duration-300 ease-in-out text-sm sm:text-xl"
           aria-label={link.ariaLabel}
           href={link.url}
         >
@@ -47,10 +47,10 @@ const ItemsNav = [
 
   @keyframes adapt-nav {
     0% {
-      padding: 1.2rem;
+      padding: 1rem;
     }
     100% {
-      padding: 0.7rem;
+      padding: 1rem;
     }
   }
 </style>
