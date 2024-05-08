@@ -2,26 +2,26 @@
   "basics": {
     "proyecto1": {
       "title": "Conmebol Eliminatorias 2026",
-      "description": "Proyecto donde recopila información de las eliminatorias de la Conmebol para el Mundial 2026. Desarrollado con Html, Css y JavaScript Vanilla.",
+      "description": "Este proyecto es una plataforma que recopila información actualizada sobre las eliminatorias de la Conmebol para el Mundial 2026. Desarrollado con HTML, CSS y JavaScript Vanilla, ofrece una experiencia simple y directa para los aficionados al fútbol. Los usuarios pueden acceder fácilmente a datos relevantes, como resultados de partidos, posiciones de equipos y próximos encuentros, todo en un diseño intuitivo y fácil de usar.",
       "image": "/conmebol-medium.webp",
       "link": "https://eliminatorias-mundial-2026.vercel.app/",
-      "github":"https://github.com/VikusS3/Eliminatorias-Mundial-2026",
-      "tecnologias":["HTML", "CSS", "JavaScript"]
+      "github": "https://github.com/VikusS3/Eliminatorias-Mundial-2026",
+      "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto2": {
       "title": "Code Multi All",
-      "description": "Landing page de una empresa que brinda servicios de desarrollo web, creacion de scripts, consultorias y mas. Hecho con Astro y TailwindCSS.",
+      "description": "La página de inicio de nuestra empresa, desarrollada con Astro y TailwindCSS, brinda una experiencia moderna y receptiva para los visitantes. Presentamos nuestros servicios de desarrollo web, creación de scripts, consultorías y más de manera clara y atractiva, destacando nuestra experiencia y profesionalismo. Los clientes pueden explorar fácilmente nuestros servicios y contactarnos para discutir sus necesidades específicas.",
       "image": "/code-multi-all-medium.webp",
       "link": "https://code-multi-all.vercel.app/",
-      "github":"https://github.com/VikusS3/CodeMultiAll",
+      "github": "https://github.com/VikusS3/CodeMultiAll",
       "tecnologias": ["Astro", "TailwindCSS"]
     },
     "proyecto3": {
       "title": "Restaurante Landing Page",
-      "description": "Landing page de un restaurante. Hecho con Astro y TailwindCSS.",
+      "description": "La landing page un restaurante, desarrollada con Astro y TailwindCSS, ofrece una experiencia sencilla y atractiva para nuestros clientes. Presentamos nuestra variedad de platos, horarios de apertura, ubicación y opciones de reserva de una manera clara y concisa. Con un diseño moderno y funcional, invitamos a los visitantes a conocer y disfrutar de nuestra propuesta gastronómica única.",
       "image": "/Restaurante.webp",
       "link": "https://myrestaurante.vercel.app/",
-      "github":"https://github.com/VikusS3/Restaurantes/tree/main/boomerang-landing",
+      "github": "https://github.com/VikusS3/Restaurantes/tree/main/boomerang-landing",
       "tecnologias": ["Astro", "TailwindCSS"]
     },
     "proyecto4": {
@@ -36,6 +36,7 @@
       "description": "Juego de adivinar la palabra.Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://deft-bonbon-e07706.netlify.app/",
+      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Guess-The-Word",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto6": {
@@ -43,6 +44,7 @@
       "description": "Pagina web que genera frases de famosos. Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://extraordinary-zabaione-ed3b82.netlify.app/",
+      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Random-Quote",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto7": {
@@ -50,7 +52,16 @@
       "description": "Generador de códigos QR. Hecho con HTML, CSS y JavaScript.",
       "image": "https://via.placeholder.com/150",
       "link": "https://resplendent-kangaroo-397d94.netlify.app/",
+      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/QR-generator",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
+    },
+    "proyecto8": {
+      "title": "Projects Whit React",
+      "description": "Proyectos realizados con React.",
+      "image": "/qr-medium.webp",
+      "link": "https://projects-react-alpha.vercel.app/",
+      "github":"https://github.com/VikusS3/projects-react",
+      "tecnologias": ["React"]
     }
   },
   "socials": {
@@ -58,7 +69,7 @@
     "linkedin": "https://www.linkedin.com/in/saul-dev/",
     "github": "https://github.com/VikusS3"
   },
-  "skills":[
+  "skills": [
     {
       "name": "HTML",
       "image": "/html5.svg"

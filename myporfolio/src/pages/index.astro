@@ -3,12 +3,15 @@ import About from "@/components/About.astro";
 import Hero from "@/components/Hero.astro";
 import Projects from "@/components/Projects.astro";
 import Skills from "@/components/Skills.astro";
+import Header from "@/components/Header.astro";
 
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="SaulDev - FrontEnd Developer"
 description="Hola soy Saul soy un desarrollador FrontEnd, me encanta crear aplicaciones web y aprender nuevas tecnologías.">
+<Header />
+
   <main class="px-4">
 	<Hero />
   <Skills />
