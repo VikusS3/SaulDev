@@ -1,47 +1,50 @@
 ---
-
 import { basics } from "@data";
 import BentoItem from "./BentoItem.astro";
 
-
-const {  proyecto4, proyecto5, proyecto6, proyecto7,proyecto8 } =
-  basics;
+const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8 } = basics;
 ---
 
-<div class="grid grid-cols-2 grid-rows-3 place-content-center justify-center items-center gap-4">
-    <BentoItem 
-      class="col-span-1 row-span-1"
-      title={proyecto4.title}
-      description={proyecto4.description}
-      image={proyecto4.image}
-      link={proyecto4.link}
-    />
-    <BentoItem
-      class="col-span-1 row-span-1" 
-      title={proyecto5.title}
-      description={proyecto5.description}
-      image={proyecto5.image}
-      link={proyecto5.link}
-    />
-    <BentoItem 
-      class="col-span-1 row-span-1"
-      title={proyecto6.title}
-      description={proyecto6.description}
-      image={proyecto6.image}
-      link={proyecto6.link}
-    />
-    <BentoItem
-    class="col-span-1 row-span-1" 
-      title={proyecto7.title}
-      description={proyecto7.description}
-      image={proyecto7.image}
-      link={proyecto7.link}
-    />
-    <BentoItem 
-      class="col-span-2 self-center justify-self-center"
-      title={proyecto8.title}
-      description={proyecto8.description}
-      image={proyecto8.image}
-      link={proyecto8.link}
-    />
+<div
+  class="w-full my_grid"
+>
+  <BentoItem
+    title={proyecto4.title}
+    description={proyecto4.description}
+    image={proyecto4.image}
+    link={proyecto4.link}
+  />
+  <BentoItem
+    title={proyecto5.title}
+    description={proyecto5.description}
+    image={proyecto5.image}
+    link={proyecto5.link}
+  />
+  <BentoItem
+    title={proyecto6.title}
+    description={proyecto6.description}
+    image={proyecto6.image}
+    link={proyecto6.link}
+  />
+  <BentoItem
+    title={proyecto7.title}
+    description={proyecto7.description}
+    image={proyecto7.image}
+    link={proyecto7.link}
+  />
+  <BentoItem
+  class="justify-self-center col-span-1"
+    title={proyecto8.title}
+    description={proyecto8.description}
+    image={proyecto8.image}
+    link={proyecto8.link}
+  />
 </div>
+
+<style>
+  .my_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+</style>

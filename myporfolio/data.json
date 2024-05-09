@@ -26,15 +26,15 @@
     },
     "proyecto4": {
       "title": "LinkBio",
-      "description": "Mi pagina de Links, Hecha con Python y el framework Reflex.",
+      "description": "Mi pagina de Links, hecha con Python y el framework Reflex. donde pongo mis redes sociales",
       "image": "/link-medium.webp",
       "link": "https://saul-dev.vercel.app/",
       "tecnologias": ["Python", "Reflex"]
     },
     "proyecto5": {
       "title": "Word Scramblee",
-      "description": "Juego de adivinar la palabra.Hecho con HTML, CSS y JavaScript.",
-      "image": "https://via.placeholder.com/150",
+      "description": "Juego de adivinar la palabra. Hecho con HTML, CSS y JavaScript.",
+      "image": "/word-scramble.webp",
       "link": "https://deft-bonbon-e07706.netlify.app/",
       "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Guess-The-Word",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
@@ -42,7 +42,7 @@
     "proyecto6": {
       "title": "Random Quote Generator",
       "description": "Pagina web que genera frases de famosos. Hecho con HTML, CSS y JavaScript.",
-      "image": "https://via.placeholder.com/150",
+      "image": "/random-quote-small.webp",
       "link": "https://extraordinary-zabaione-ed3b82.netlify.app/",
       "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Random-Quote",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
@@ -50,15 +50,15 @@
     "proyecto7": {
       "title": "QR Code Generator",
       "description": "Generador de códigos QR. Hecho con HTML, CSS y JavaScript.",
-      "image": "https://via.placeholder.com/150",
+      "image": "/qr-small.webp",
       "link": "https://resplendent-kangaroo-397d94.netlify.app/",
       "github":"https://github.com/VikusS3/challenges-html-css/tree/main/QR-generator",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto8": {
       "title": "Projects Whit React",
-      "description": "Proyectos realizados con React.",
-      "image": "/qr-medium.webp",
+      "description": "Proyectos realizados con la biblioteca React.",
+      "image": "/react.webp",
       "link": "https://projects-react-alpha.vercel.app/",
       "github":"https://github.com/VikusS3/projects-react",
       "tecnologias": ["React"]

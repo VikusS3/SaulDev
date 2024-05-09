@@ -16,10 +16,10 @@ const { title, description, link, image, github } = Astro.props;
 <article 
   class=`${Astro.props.class} flex justify-center items-center`
 >
-  <div class=" relative w-[600px]">
+  <div class=" relative w-full h-full">
     <img src={image} alt={title} class="w-full block m-auto rounded-lg" />
     <div
-      class="w-full h-full absolute bg-[rgba(0,0,0,0.6)] flex flex-col justify-center items-center opacity-1 transition-[0.6s] left-0 top-0 hover:opacity-100 ease-in-out duration-500 gap-10"
+      class="w-full h-full absolute bg-[rgba(0,0,0,0.6)] flex flex-col justify-center items-center opacity-0 transition-[0.6s] left-0 top-0 hover:opacity-100 ease-in-out duration-500 gap-10"
     >
       <div class="text-lg flex flex-col justify-center items-center">
         <h2>
