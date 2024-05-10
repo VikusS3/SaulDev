@@ -5,9 +5,7 @@ import BentoItem from "./BentoItem.astro";
 const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8 } = basics;
 ---
 
-<div
-  class="w-full my_grid"
->
+<div class="w-full my_grid">
   <BentoItem
     title={proyecto4.title}
     description={proyecto4.description}
@@ -33,7 +31,7 @@ const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8 } = basics;
     link={proyecto7.link}
   />
   <BentoItem
-  class="justify-self-center col-span-1"
+    class="justify-self-center col-span-1"
     title={proyecto8.title}
     description={proyecto8.description}
     image={proyecto8.image}
@@ -45,6 +43,6 @@ const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8 } = basics;
   .my_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 20px;
   }
 </style>

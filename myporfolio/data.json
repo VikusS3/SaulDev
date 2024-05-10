@@ -36,7 +36,7 @@
       "description": "Juego de adivinar la palabra. Hecho con HTML, CSS y JavaScript.",
       "image": "/word-scramble.webp",
       "link": "https://deft-bonbon-e07706.netlify.app/",
-      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Guess-The-Word",
+      "github": "https://github.com/VikusS3/challenges-html-css/tree/main/Guess-The-Word",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto6": {
@@ -44,7 +44,7 @@
       "description": "Pagina web que genera frases de famosos. Hecho con HTML, CSS y JavaScript.",
       "image": "/random-quote-small.webp",
       "link": "https://extraordinary-zabaione-ed3b82.netlify.app/",
-      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/Random-Quote",
+      "github": "https://github.com/VikusS3/challenges-html-css/tree/main/Random-Quote",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto7": {
@@ -52,15 +52,15 @@
       "description": "Generador de códigos QR. Hecho con HTML, CSS y JavaScript.",
       "image": "/qr-small.webp",
       "link": "https://resplendent-kangaroo-397d94.netlify.app/",
-      "github":"https://github.com/VikusS3/challenges-html-css/tree/main/QR-generator",
+      "github": "https://github.com/VikusS3/challenges-html-css/tree/main/QR-generator",
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto8": {
       "title": "Projects Whit React",
       "description": "Proyectos realizados con la biblioteca React.",
-      "image": "/react.webp",
+      "image": "/projects-whit-react.webp",
       "link": "https://projects-react-alpha.vercel.app/",
-      "github":"https://github.com/VikusS3/projects-react",
+      "github": "https://github.com/VikusS3/projects-react",
       "tecnologias": ["React"]
     }
   },
