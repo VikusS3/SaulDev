@@ -29,7 +29,8 @@
       "description": "Mi pagina de Links, hecha con Python y el framework Reflex. donde pongo mis redes sociales",
       "image": "/link-medium.webp",
       "link": "https://saul-dev.vercel.app/",
-      "tecnologias": ["Python", "Reflex"]
+      "tecnologias": ["Python", "Reflex"],
+      "github": "https://github.com/VikusS3/Mi-pagina-web-con-reflex"
     },
     "proyecto5": {
       "title": "Word Scramblee",

@@ -1,14 +1,14 @@
 ---
 const ItemsNav = [
   {
-    name: "Skills",
-    ariaLabel: "Skills",
-    url: "/index.html#skills",
-  },
-  {
     name: "Projectos",
     ariaLabel: "Projectos",
     url: "/index.html#projects",
+  },
+  {
+    name: "Skills",
+    ariaLabel: "Skills",
+    url: "/index.html#skills",
   },
   {
     name: "Sobre Mi",
@@ -21,7 +21,9 @@ const ItemsNav = [
 <header
   class="header-animate flex justify-center items-center w-full mx-auto border-b-2 z-10"
 >
-  <nav class="flex flex-row items-center justify-center gap-12 sm:gap-20 text-xl">
+  <nav
+    class="flex flex-row items-center justify-center gap-12 sm:gap-20 text-xl"
+  >
     {
       ItemsNav.map((link) => (
         <a
@@ -37,7 +39,7 @@ const ItemsNav = [
 </header>
 
 <style>
-  .my-text{
+  .my-text {
     text-shadow: 1px 0px 30px rgba(252, 252, 252, 0.877);
   }
 
