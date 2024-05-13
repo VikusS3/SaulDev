@@ -1,0 +1,57 @@
+---
+import { redes_sociales } from "@social";
+import LinkPill from "./LinkPill.astro";
+import GithubIcon from "@/icons/Github.astro";
+import LinkedInIcon from "@/icons/Linkedin.astro";
+import TwitterIcon from "@/icons/X.astro";
+import YouTubeIcon from "@/icons/Youtube.astro";
+import TwitchIcon from "@/icons/Twitch.astro";
+import GmailIcon from "@/icons/Mail.astro";
+import PortafolioIcon from "@/icons/Porfolio.astro";
+import PorfolioIcon from "@/icons/Porfolio.astro";
+
+const { Github, Gmail, LinkedIn, Portafolio, Twitch, Twitter, YouTube } =
+  redes_sociales;
+---
+
+<section class="w-full flex flex-col mt-10">
+  <h2 class="mb-2 text-3xl text-zinc-200">Redes Sociales</h2>
+  <div class="flex flex-col gap-5">
+    <LinkPill
+      href={Github}
+      title="Github"
+      description="Mis repositorios de mis mejores proyectos"
+    >
+      <GithubIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+
+    <LinkPill
+      href={Twitter}
+      title="Twitter"
+      description="Sigueme para ver contenido sobre tecnología"
+    >
+      <TwitterIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+    <LinkPill
+      href={YouTube}
+      title="YouTube"
+      description="Mi canal de youtube donde subo contenido sobre tecnología"
+    >
+      <YouTubeIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+    <LinkPill
+      href={Portafolio}
+      title="Portafolio"
+      description="Mi portafolio donde podras ver mis proyectos"
+    >
+      <PorfolioIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+    <LinkPill
+      href={LinkedIn}
+      title="LinkedIn"
+      description="Mi linkedin donde descubriras mas acerca de mi"
+    >
+      <LinkedInIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Links from "@/components/Links.astro";
+import Recomends from "@/components/Recomends.astro";
+import OtherLinks from "@/components/OtherLinks.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout
+  title="SaulDev | apasionado programador"
+  description="Hola soy SaulDev soy programador y me encanta crear aplicacion interactivas con diversas tecnologias"
+>
+  <main class="max-w-[580px] w-full flex flex-col justify-center items-center">
+    <Header />
+    <Links />
+    <Recomends />
+    <OtherLinks />
+    <Footer />
+  </main>
+</Layout>

@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  description: string;
+}
+
+const { href, title, description } = Astro.props;
+---
+
+<a href={href} role="link" rel="noopener noreferrer" target="_blank" class="">
+  <div
+    class="flex items-center justify-start w-full bg-zinc-900 p-4 rounded-xl hover:bg-red-500 duration-200 transition-colors ease-in-out gap-4"
+  >
+    <slot name="icon" />
+    <div>
+      <h3 class="text-xl">
+        {title}
+      </h3>
+      <p class="text-zinc-300">
+        {description}
+      </p>
+    </div>
+  </div>
+</a>

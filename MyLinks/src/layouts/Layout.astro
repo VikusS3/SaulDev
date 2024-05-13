@@ -1,0 +1,61 @@
+---
+import "@fontsource/ubuntu";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="keywords"
+      content="Astro, linkbio, sauldev, desarrollador web, Frontend, redes sociales"
+    />
+    <meta name="author" content="SaulDev" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Hola soy SaulDev soy programador y me encanta crear aplicacion interactivas con diversas tecnologias"
+    />
+    <meta property="og:title" content="SaulDev | apasionado programador" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/5NBxqxyQ/610shots-so.png"
+    />
+    <meta property="og:site_name" content="SaulDev - FrontEnd Developer" />
+    <meta property="og:url" content="https://sauldevbio.vercel.app/" />
+    <meta
+      property="og:description"
+      content="Hola soy SaulDev soy programador y me encanta crear aplicacion interactivas con diversas tecnologias"
+    />
+    <link rel="canonical" href="https://sauldevbio.vercel.app/" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: "Ubuntu", system-ui, sans-serif;
+    background: #0b0d0f;
+    color: white;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+</style>
