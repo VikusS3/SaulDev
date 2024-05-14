@@ -28,6 +28,7 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
           <ProjectItem
             title={proyecto.title}
             description={proyecto.description}
+            description2={proyecto.description2}
             image={proyecto.image}
             link={proyecto.link}
             tecnologies={proyecto.tecnologias}
@@ -35,10 +36,11 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
         ))
     }
   </div>
-  <a 
+  <a
     href="/projects"
     aria-label="Ver más proyectos"
-    class=" bg-zinc-800 text-white px-7 py-3 rounded-xl text-xl mt-10 hover:scale-110 duration-200 ease-in-out transition-transform">
+    class="bg-zinc-800 text-white px-7 py-3 rounded-xl text-xl mt-10 hover:scale-110 duration-200 ease-in-out transition-transform"
+  >
     Ver más
   </a>
 </section>
