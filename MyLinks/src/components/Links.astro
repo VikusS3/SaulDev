@@ -10,8 +10,7 @@ import GmailIcon from "@/icons/Mail.astro";
 import PortafolioIcon from "@/icons/Porfolio.astro";
 import PorfolioIcon from "@/icons/Porfolio.astro";
 
-const { Github, Gmail, LinkedIn, Portafolio, Twitch, Twitter, YouTube } =
-  redes_sociales;
+const { Github, Gmail, LinkedIn, Portafolio, Twitter } = redes_sociales;
 ---
 
 <section class="w-full flex flex-col mt-10">
@@ -31,13 +30,6 @@ const { Github, Gmail, LinkedIn, Portafolio, Twitch, Twitter, YouTube } =
       description="Sigueme para ver contenido sobre tecnología"
     >
       <TwitterIcon slot="icon" class="w-8 h-8" />
-    </LinkPill>
-    <LinkPill
-      href={YouTube}
-      title="YouTube"
-      description="Mi canal de youtube donde subo contenido sobre tecnología"
-    >
-      <YouTubeIcon slot="icon" class="w-8 h-8" />
     </LinkPill>
     <LinkPill
       href={Portafolio}

@@ -6,9 +6,7 @@ const { fatz, midudev, mouredev, soydalto, freeCodeCamp } =
   social_content_creator;
 ---
 
-<div
-  class="grid grid-cols-3 mt-10 gap-4 gap-y-5 justify-stretch place-items-stretch mb-6"
->
+<div class="my-grid mt-10 gap-4 gap-y-5 mb-6">
   <BentoItem name="midudev" img="/midudev.webp" href={midudev} />
 
   <BentoItem name="soydalto" img="/soydalto.webp" href={soydalto} />
@@ -16,3 +14,11 @@ const { fatz, midudev, mouredev, soydalto, freeCodeCamp } =
   <BentoItem name="fatz" img="/fatz.webp" href={fatz} />
   <BentoItem name="mouredev" img="/mouredev.webp" href={mouredev} />
 </div>
+
+<style>
+  .my-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+</style>

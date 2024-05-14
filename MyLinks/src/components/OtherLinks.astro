@@ -1,0 +1,32 @@
+---
+import TwitchIcon from "@/icons/Twitch.astro";
+import YoutubeIcon from "@/icons/Youtube.astro";
+import LinkPill from "./LinkPill.astro";
+import GmailIcon from "@/icons/Mail.astro";
+import { redes_sociales } from "@social";
+
+const { Twitch, YouTube, Gmail } = redes_sociales;
+---
+
+<section class="w-full flex flex-col mt-10">
+  <h2 class="mb-2 text-3xl text-zinc-200">Otras Redes Sociales</h2>
+  <div class="flex flex-col gap-5">
+    <LinkPill href={Twitch} title="Twitch" description="Mi canal de Twitch">
+      <TwitchIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+    <LinkPill
+      href={YouTube}
+      title="YouTube"
+      description="Mi canal de youtube donde subo contenido sobre tecnología"
+    >
+      <YoutubeIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+    <LinkPill
+      href=`mailto:${Gmail}`
+      title="Gmail"
+      description="Contactame por correo electronico"
+    >
+      <GmailIcon slot="icon" class="w-8 h-8" />
+    </LinkPill>
+  </div>
+</section>
