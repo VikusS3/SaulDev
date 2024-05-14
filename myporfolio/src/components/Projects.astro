@@ -22,13 +22,13 @@ const { proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 } =
   </p>
   <div class="px-5 sm:px-8 md:px-20 mt-10 flex flex-col flex-wrap gap-10">
     {
-      [proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6]
+      [proyecto1, proyecto2, proyecto3]
         .slice(0, 3)
         .map((proyecto) => (
           <ProjectItem
             title={proyecto.title}
             description={proyecto.description}
-            description2={proyecto.description2}
+            second_description={proyecto.second_description}
             image={proyecto.image}
             link={proyecto.link}
             tecnologies={proyecto.tecnologias}

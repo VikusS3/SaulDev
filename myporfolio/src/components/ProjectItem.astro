@@ -6,15 +6,22 @@ import Pill from "./Pill.astro";
 interface Props {
   title: string;
   description: string;
-  description2?: string;
+  second_description?: string;
   image: string;
   link: string;
   tecnologies: string[];
   github?: string;
 }
 
-const { title, description, description2, image, link, tecnologies, github } =
-  Astro.props;
+const {
+  title,
+  description,
+  second_description,
+  image,
+  link,
+  tecnologies,
+  github,
+} = Astro.props;
 ---
 
 <article
@@ -42,9 +49,9 @@ const { title, description, description2, image, link, tecnologies, github } =
         <h2 class="text-2xl text-text-100">{title}</h2>
         <p class="text-md text-text-100 max-w-2xl text-pretty">{description}</p>
         {
-          description2 && (
+          second_description && (
             <p class="text-md text-text-100 max-w-2xl text-pretty">
-              {description2}
+              {second_description}
             </p>
           )
         }
