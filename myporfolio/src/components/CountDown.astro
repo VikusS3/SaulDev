@@ -1,0 +1,100 @@
+---
+interface Props {
+  class?: string;
+}
+
+const TIMESTAMP = 1716825600000;
+---
+
+<div
+  data-date={TIMESTAMP}
+  class=`${Astro.props.class}  flex flex-row text-center justify-center items-center uppercase gap-x-9`
+>
+  <div class="flex flex-col justify-center items-center gap-y-1 w-14">
+    <span data-days class="text-5xl tabular-nums text">00</span>
+    <span class="text-xl text-center opacity-90">Días</span>
+  </div>
+
+  <span aria-hidden="true" class="mt-1 font-bold text-xl">:</span>
+
+  <div class="flex flex-col justify-center items-center gap-y-1 w-14">
+    <span data-hours class="text-5xl tabular-nums text">00</span>
+    <span class="text-xl text-center opacity-90">Horas</span>
+  </div>
+  <span aria-hidden="true" class="mt-1 font-bold text-xl mobile_special">:</span
+  >
+  <div
+    class="flex flex-col justify-center items-center gap-y-1 w-14 mobile_special"
+  >
+    <span data-minutes class="text-5xl tabular-nums text">00</span>
+    <span class="text-xl text-center opacity-90">Minutos</span>
+  </div>
+  <span aria-hidden="true" class="mt-1 font-bold text-xl mobile_special">:</span
+  >
+  <div
+    class="flex flex-col justify-center items-center gap-y-1 w-14 mobile_special"
+  >
+    <span data-seconds class="text-5xl tabular-nums text">00</span>
+    <span class="text-xl text-center opacity-90">Segundos</span>
+  </div>
+</div>
+
+<style>
+  .text {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.62);
+  }
+
+  @media screen and (max-width: 470px) {
+    .mobile_special {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const SECOND = 1000;
+  const MINUTE = SECOND * 60;
+  const HOUR = MINUTE * 60;
+  const DAY = HOUR * 24;
+
+  function Iniciar() {
+    const $countdown = document.querySelector("[data-date]");
+    if (!$countdown) return;
+
+    const $days = $countdown.querySelector("[data-days]");
+    const $hours = $countdown.querySelector("[data-hours]");
+    const $minutes = $countdown.querySelector("[data-minutes]");
+    const $seconds = $countdown.querySelector("[data-seconds]");
+
+    const timestamp = $countdown.getAttribute("data-date");
+    if (!timestamp) return;
+
+    const date = new Date(+timestamp).getTime();
+
+    const formatTime = (time: number) => {
+      return Math.floor(time).toString().padStart(2, "0");
+    };
+
+    function updateCoundown() {
+      const now = Date.now();
+      const diff = date - now;
+
+      if ($days instanceof HTMLElement) {
+        $days.innerText = formatTime(diff / DAY);
+      }
+      if ($hours instanceof HTMLElement) {
+        $hours.innerText = formatTime((diff % DAY) / HOUR);
+      }
+      if ($minutes instanceof HTMLElement) {
+        $minutes.innerText = formatTime((diff % HOUR) / MINUTE);
+      }
+      if ($seconds instanceof HTMLElement) {
+        $seconds.innerText = formatTime((diff % MINUTE) / SECOND);
+      }
+    }
+
+    setInterval(updateCoundown, SECOND);
+  }
+
+  Iniciar();
+</script>

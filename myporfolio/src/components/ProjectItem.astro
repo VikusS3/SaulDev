@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import Github from "./Icons/Github.astro";
 import Link from "./Icons/Link.astro";
 import Pill from "./Pill.astro";
@@ -29,7 +30,14 @@ const {
 >
   <picture class="max-w-[500px]">
     <div class="parent">
-      <img src={image} alt={title} class="w-full rounded-lg child" />
+      <Image
+        width={960}
+        height={720}
+        src={image}
+        alt={title}
+        class="w-full rounded-lg child"
+        loading="lazy"
+      />
     </div>
   </picture>
   <main class="flex flex-col gap-4 justify-between">

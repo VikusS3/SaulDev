@@ -5,13 +5,15 @@ import Linkedin from "./Icons/Linkedin.astro";
 import InfoBadgets from "./InfoBadgets.astro";
 import Badge from "./Badge.astro";
 import ButtonsHero from "./ButtonsHero.astro";
-import {socials} from '@data'
+import { socials } from "@data";
 
-const {github, linkedin, twitter} = socials
-
+const { github, linkedin, twitter } = socials;
 ---
 
-<section class="w-full flex flex-col items-center justify-center py-10 mt-20 animate-fade-in animate-duration-300">
+<section
+  class="w-full flex flex-col items-center justify-center py-10 mt-20 animate-fade-in animate-duration-300"
+  id="inicio"
+>
   <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
     <div class="border-4 rounded-3xl p-1 sm:mb-32 mb-0">
       <img
@@ -27,28 +29,50 @@ const {github, linkedin, twitter} = socials
       </div>
 
       <p class="sm:text-xl text-wrap text-text-200">
-        Desarrollador frontend de <span class=" text-[#f5cdcd]">Perú</span>.
+        Desarrollador frontend de <span class="text-[#f5cdcd]">Perú</span>.
         Especializado en el desarrollo de paginas web estáticas y dinámicas
       </p>
-      <div class="flex flex-row items-center justify-center sm:justify-start gap-5">
-        <a href={github} target="_blank" aria-label="Github" rel="noopener noreferrer" role="link">
+      <div
+        class="flex flex-row items-center justify-center sm:justify-start gap-5"
+      >
+        <a
+          href={github}
+          target="_blank"
+          aria-label="Github"
+          rel="noopener noreferrer"
+          role="link"
+        >
           <Github
             class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
-         </a> /></a
-        >
-        <a href={linkedin} aria-label="Linkedin" target="_blank" rel="noopener noreferrer" role="link">
-          <Linkedin
-            class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
-          /></a
-        >
-        <a href={twitter} aria-label="Twitter" target="_blank" rel="noopener noreferrer" role="link">
-          <X
-            class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
-          /></a
-        >
-        <span class="font-semibold">
-          ✉ felix21soc@gmail.com
-        </span>
+            <
+            a
+          >
+            /></Github
+          >
+          <a
+            href={linkedin}
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+          >
+            <Linkedin
+              class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
+            /></a
+          >
+          <a
+            href={twitter}
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+          >
+            <X
+              class="w-10 h-10 text-gray-300 hover:scale-110 hover:text-white transition"
+            /></a
+          >
+          <span class="font-base opacity-90"> ✉ felix21soc@gmail.com </span>
+        </a>
       </div>
     </div>
   </div>
