@@ -66,6 +66,14 @@
       "link": "https://projects-react-alpha.vercel.app/",
       "github": "https://github.com/VikusS3/projects-react",
       "tecnologias": ["React"]
+    },
+    "proyecto9": {
+      "title": "TODO App",
+      "description": "TODO app con typescript y react",
+      "image": "/TODO.webp",
+      "link": "https://apptodotype.netlify.app/",
+      "github": "",
+      "tecnologias": ["React", "TypeScript"]
     }
   },
   "socials": {
