@@ -74,6 +74,14 @@
       "link": "https://apptodotype.netlify.app/",
       "github": "",
       "tecnologias": ["React", "TypeScript"]
+    },
+    "proyecto10": {
+      "title": "Quizz Python",
+      "description": "Quizz sobre Python, hecho con React, TypeScript y Zustand",
+      "image": "/quizzpython.webp",
+      "link": "https://quizz-python.netlify.app/",
+      "github": "https://github.com/VikusS3/Aprendiendo-React/tree/main/projects/quizz-whitreact",
+      "tecnologias": ["React", "TypeScript", "Zustand"]
     }
   },
   "socials": {

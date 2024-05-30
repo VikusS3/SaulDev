@@ -2,8 +2,15 @@
 import { basics } from "@data";
 import BentoItem from "./BentoItem.astro";
 
-const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8, proyecto9 } =
-  basics;
+const {
+  proyecto4,
+  proyecto5,
+  proyecto6,
+  proyecto7,
+  proyecto8,
+  proyecto9,
+  proyecto10,
+} = basics;
 ---
 
 <div class="w-full my_grid">
@@ -49,6 +56,14 @@ const { proyecto4, proyecto5, proyecto6, proyecto7, proyecto8, proyecto9 } =
     description={proyecto9.description}
     image={proyecto9.image}
     link={proyecto9.link}
+  />
+  <BentoItem
+    class="justify-self-center col-span-1"
+    title={proyecto10.title}
+    description={proyecto10.description}
+    image={proyecto10.image}
+    link={proyecto10.link}
+    github={proyecto10.github}
   />
 </div>
 
