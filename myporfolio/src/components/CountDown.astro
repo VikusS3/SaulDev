@@ -3,7 +3,7 @@ interface Props {
   class?: string;
 }
 
-const TIMESTAMP = 1717556400000;
+const TIMESTAMP = 1717600110000;
 ---
 
 <div
@@ -79,6 +79,23 @@ const TIMESTAMP = 1717556400000;
       const now = Date.now();
       const diff = date - now;
 
+      if (diff <= 0) {
+        clearInterval(intervalId);
+        if ($days instanceof HTMLElement) {
+          $days.innerText = "00";
+        }
+        if ($hours instanceof HTMLElement) {
+          $hours.innerText = "00";
+        }
+        if ($minutes instanceof HTMLElement) {
+          $minutes.innerText = "00";
+        }
+        if ($seconds instanceof HTMLElement) {
+          $seconds.innerText = "00";
+        }
+        return;
+      }
+
       if ($days instanceof HTMLElement) {
         $days.innerText = formatTime(diff / DAY);
       }
@@ -93,7 +110,7 @@ const TIMESTAMP = 1717556400000;
       }
     }
 
-    setInterval(updateCoundown, SECOND);
+    const intervalId = setInterval(updateCoundown, 1000);
   }
 
   Iniciar();
