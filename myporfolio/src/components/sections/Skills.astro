@@ -1,20 +1,22 @@
 ---
-import AstroPill from "./Icons/Pills/AstroPill.astro";
+import AstroPill from "../Icons/Pills/AstroPill.astro";
 import ContenedorSkill from "@/components/ContenedorSkill.astro";
-import CssPill from "./Icons/Pills/CssPill.astro";
-import HtmlPill from "./Icons/Pills/HtmlPill.astro";
-import JavaScriptPill from "./Icons/Pills/JavaScriptPill.astro";
-import Mysql from "./Icons/Pills/Mysql.astro";
-import MongoDb from "./Icons/Pills/MongoDb.astro";
-import NodeJs from "./Icons/Pills/NodeJs.astro";
-import Php from "./Icons/Pills/Php.astro";
-import Python from "./Icons/Python.astro";
-import ReactJs from "./Icons/Pills/ReactJs.astro";
-import Sql from "./Icons/Pills/Sql.astro";
-import Tailwind from "./Icons/Tailwind.astro";
-import NpmPill from "./Icons/Pills/NpmPill.astro";
-import PnpmPill from "./Icons/Pills/PnpmPill.astro";
-import GitPill from "./Icons/Pills/GitPill.astro";
+import CssPill from "../Icons/Pills/CssPill.astro";
+import HtmlPill from "../Icons/Pills/HtmlPill.astro";
+import JavaScriptPill from "../Icons/Pills/JavaScriptPill.astro";
+import Mysql from "../Icons/Pills/Mysql.astro";
+import MongoDb from "../Icons/Pills/MongoDb.astro";
+import NodeJs from "../Icons/Pills/NodeJs.astro";
+import Php from "../Icons/Pills/Php.astro";
+
+import ReactJs from "../Icons/Pills/ReactJs.astro";
+import Sql from "../Icons/Pills/Sql.astro";
+import NpmPill from "../Icons/Pills/NpmPill.astro";
+import PnpmPill from "../Icons/Pills/PnpmPill.astro";
+import GitPill from "../Icons/Pills/GitPill.astro";
+import TailwindPill from "../Icons/Pills/TailwindPill.astro";
+import PythonPill from "../Icons/Pills/PythonPill.astro";
+import VercelPill from "../Icons/Pills/VercelPill.astro";
 ---
 
 <section
@@ -33,15 +35,14 @@ import GitPill from "./Icons/Pills/GitPill.astro";
     class="w-full flex flex-row flex-wrap justify-center items-center mt-8 gap-10 animate-blink [animation-range:0px_400px] [animation-timeline:view()]"
   >
     <ContenedorSkill name="Frontend">
-      <Tailwind class="w-20 h-20" />
-      <CssPill class="w-20 h-20" />
-      <HtmlPill class="w-20 h-20" />
-      <JavaScriptPill class="w-20 h-20" />
-      <AstroPill class="w-20 h-20" />
+      <TailwindPill class="w-20 h-20" />
+      <CssPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
+      <HtmlPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
+      <JavaScriptPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
+      <AstroPill class="w-20 h-20 mt-1" />
       <ReactJs class="w-20 h-20" />
     </ContenedorSkill>
     <ContenedorSkill name="Backend">
-      <Python class="w-20 h-20" />
       <Php class="w-20 h-20" />
       <NodeJs class="w-20 h-20" />
     </ContenedorSkill>
@@ -51,9 +52,10 @@ import GitPill from "./Icons/Pills/GitPill.astro";
       <MongoDb class="w-20 h-20" />
     </ContenedorSkill>
     <ContenedorSkill name="Otros">
-      <NpmPill class="w-16 h-16" />
+      <NpmPill class="w-20 h-20" />
       <PnpmPill class="w-20 h-20" />
       <GitPill class="w-20 h-20" />
+      <VercelPill class="w-40 h-20" />
     </ContenedorSkill>
   </div>
 </section>

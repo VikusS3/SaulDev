@@ -45,7 +45,7 @@
     },
     "proyecto6": {
       "title": "Random Quote Generator",
-      "description": "Pagina web que genera frases de famosos. Hecho con HTML, CSS y JavaScript.",
+      "description": "Pagina web que genera frases de famosos",
       "image": "/random-quote-small.webp",
       "link": "https://extraordinary-zabaione-ed3b82.netlify.app/",
       "github": "https://github.com/VikusS3/challenges-html-css/tree/main/Random-Quote",
@@ -53,7 +53,7 @@
     },
     "proyecto7": {
       "title": "QR Code Generator",
-      "description": "Generador de códigos QR. Hecho con HTML, CSS y JavaScript.",
+      "description": "Generador de códigos QR. Hecho con JavaScript.",
       "image": "/qr-small.webp",
       "link": "https://resplendent-kangaroo-397d94.netlify.app/",
       "github": "https://github.com/VikusS3/challenges-html-css/tree/main/QR-generator",
@@ -72,7 +72,7 @@
       "description": "TODO app con typescript y react",
       "image": "/TODO.webp",
       "link": "https://apptodotype.netlify.app/",
-      "github": "",
+      "github": "#",
       "tecnologias": ["React", "TypeScript"]
     },
     "proyecto10": {
@@ -82,6 +82,14 @@
       "link": "https://quizz-python.netlify.app/",
       "github": "https://github.com/VikusS3/Aprendiendo-React/tree/main/projects/quizz-whitreact",
       "tecnologias": ["React", "TypeScript", "Zustand"]
+    },
+    "proyecto11": {
+      "title": "Pandagameplay",
+      "description": "Sitio web de un streamer de videojuegos. Hecho con Astro y TailwindCSS.",
+      "image": "/pandagameplay.webp",
+      "link": "https://pandagameplay.netlify.app/",
+      "github": "#",
+      "tecnologias": ["Astro", "TailwindCSS"]
     }
   },
   "socials": {

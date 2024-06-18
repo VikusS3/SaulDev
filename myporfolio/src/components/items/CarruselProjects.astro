@@ -1,0 +1,170 @@
+---
+import BentoItem from "./BentoItem.astro";
+import { basics } from "@data";
+
+const {
+  proyecto4,
+  proyecto5,
+  proyecto6,
+  proyecto7,
+  proyecto8,
+  proyecto9,
+  proyecto10,
+  proyecto11,
+} = basics;
+---
+
+<div class="wrapper">
+  <div class="itemLeft item1">
+    <BentoItem
+      title={proyecto4.title}
+      description={proyecto4.description}
+      image={proyecto4.image}
+      link={proyecto4.link}
+      github={proyecto4.github}
+    />
+  </div>
+  <div class="itemLeft item2">
+    <BentoItem
+      title={proyecto5.title}
+      description={proyecto5.description}
+      image={proyecto5.image}
+      link={proyecto5.link}
+      github={proyecto5.github}
+    />
+  </div>
+  <div class="itemLeft item3">
+    <BentoItem
+      title={proyecto6.title}
+      description={proyecto6.description}
+      image={proyecto6.image}
+      link={proyecto6.link}
+      github={proyecto6.github}
+    />
+  </div>
+  <div class="itemLeft item4">
+    <BentoItem
+      title={proyecto11.title}
+      description={proyecto11.description}
+      image={proyecto11.image}
+      link={proyecto11.link}
+      github={proyecto11.github}
+    />
+  </div>
+</div>
+<div class="wrapper">
+  <div class="itemRight item1">
+    <BentoItem
+      title={proyecto7.title}
+      description={proyecto7.description}
+      image={proyecto7.image}
+      link={proyecto7.link}
+      github={proyecto7.github}
+    />
+  </div>
+  <div class="itemRight item2">
+    <BentoItem
+      title={proyecto8.title}
+      description={proyecto8.description}
+      image={proyecto8.image}
+      link={proyecto8.link}
+      github={proyecto8.github}
+    />
+  </div>
+  <div class="itemRight item3">
+    <BentoItem
+      title={proyecto9.title}
+      description={proyecto9.description}
+      image={proyecto9.image}
+      link={proyecto9.link}
+      github={proyecto9.github}
+    />
+  </div>
+  <div class="itemRight item4">
+    <BentoItem
+      title={proyecto10.title}
+      description={proyecto10.description}
+      image={proyecto10.image}
+      link={proyecto10.link}
+      github={proyecto10.github}
+    />
+  </div>
+</div>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  .wrapper {
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+
+  @keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+
+  .itemLeft,
+  .itemRight {
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  .itemLeft {
+    left: max(calc(250px * 4), 100%);
+    animation-name: scrollLeft;
+  }
+
+  .itemRight {
+    right: max(calc(250px * 4), calc(100% + 250px));
+    animation-name: scrollRight;
+  }
+
+  .item1 {
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+  }
+
+  .item2 {
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+  }
+
+  .item3 {
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+  }
+
+  .item4 {
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+  }
+</style>

@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import Link from "../components/Icons/Link.astro";
-import Github from "./Icons/Github.astro";
+import Link from "../Icons/Link.astro";
+import Github from "../Icons/Github.astro";
 
 interface Props {
   class?: string;
@@ -29,7 +29,7 @@ const { title, description, link, image, github } = Astro.props;
       class="w-full h-full absolute bg-[rgba(0,0,0,0.6)] flex flex-col justify-center items-center opacity-0 transition-[0.6s] left-0 top-0 hover:opacity-100 ease-in-out duration-500 gap-5 p-1"
     >
       <div class="text-lg flex flex-col justify-center items-center">
-        <h2 class="font-semibold text-xl">
+        <h2 class="font-semibold text-xl text-center">
           {title}
         </h2>
         <p class="text-center text-md text-text-200 text-md">

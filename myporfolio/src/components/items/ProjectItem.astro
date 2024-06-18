@@ -1,8 +1,8 @@
 ---
 import Image from "astro/components/Image.astro";
-import Github from "./Icons/Github.astro";
-import Link from "./Icons/Link.astro";
-import Pill from "./Pill.astro";
+import Github from "../Icons/Github.astro";
+import Link from "../Icons/Link.astro";
+import Pill from "../Pill.astro";
 
 interface Props {
   title: string;
@@ -35,7 +35,7 @@ const {
         height={720}
         src={image}
         alt={title}
-        class="w-full rounded-lg child"
+        class="max-w-full w-full rounded-lg child aspect-auto"
         loading="lazy"
       />
     </div>
@@ -80,8 +80,8 @@ const {
       <a
         href={github}
         role="link"
-        aria-label=`Ir al repositorio de ${title}`
         rel="noopener noreferrer"
+        title="Ir al repositorio del proyecto"
         target="_blank"
         class="text-text-200 flex justify-center items-center gap-1 cursor-pointer hover:scale-110 hover:text-text-100 transition-all duration-300 ease-in-out"
       >
