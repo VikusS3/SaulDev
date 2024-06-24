@@ -17,6 +17,13 @@ import GitPill from "../Icons/Pills/GitPill.astro";
 import TailwindPill from "../Icons/Pills/TailwindPill.astro";
 import PythonPill from "../Icons/Pills/PythonPill.astro";
 import VercelPill from "../Icons/Pills/VercelPill.astro";
+import ItemSkill from "../items/ItemSkill.astro";
+import VitePill from "../Icons/Pills/VitePill.astro";
+
+import TypeScriptPill from "../Icons/Pills/TypeScriptPill.astro";
+import DjangoPill from "../Icons/Pills/DjangoPill.astro";
+import NetlifyPill from "../Icons/Pills/NetlifyPill.astro";
+import AmazonPill from "../Icons/Pills/AmazonPill.astro";
 ---
 
 <section
@@ -32,30 +39,84 @@ import VercelPill from "../Icons/Pills/VercelPill.astro";
   </p>
 
   <div
-    class="w-full flex flex-row flex-wrap justify-center items-center mt-8 gap-10 animate-blink [animation-range:0px_400px] [animation-timeline:view()]"
+    class="flex flex-row flex-wrap justify-center items-start mt-8 gap-10 animate-blink [animation-range:0px_400px] [animation-timeline:view()]"
   >
     <ContenedorSkill name="Frontend">
-      <TailwindPill class="w-20 h-20" />
-      <CssPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
-      <HtmlPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
-      <JavaScriptPill class="w-[4.5rem] h-[4.5rem] rounded-md" />
-      <AstroPill class="w-20 h-20 mt-1" />
-      <ReactJs class="w-20 h-20" />
+      <ItemSkill title="Html">
+        <HtmlPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Css">
+        <CssPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+
+      <ItemSkill title="Astro">
+        <AstroPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="React.js">
+        <ReactJs slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Tailwind">
+        <TailwindPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Vite">
+        <VitePill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
     </ContenedorSkill>
     <ContenedorSkill name="Backend">
-      <Php class="w-20 h-20" />
-      <NodeJs class="w-20 h-20" />
+      <ItemSkill title="Php">
+        <Php slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Node.js">
+        <NodeJs slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Django">
+        <DjangoPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
     </ContenedorSkill>
     <ContenedorSkill name="Database">
-      <Mysql class="w-20 h-20" />
-      <Sql class="w-20 h-20" />
-      <MongoDb class="w-20 h-20" />
+      <ItemSkill title="Mysql">
+        <Mysql slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+
+      <ItemSkill title="Sql">
+        <Sql slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+    </ContenedorSkill>
+    <ContenedorSkill name="Lenguajes">
+      <ItemSkill title="Python">
+        <PythonPill slot="icon" class="w-10 h-10" />
+      </ItemSkill>
+      <ItemSkill title="JavaScript">
+        <JavaScriptPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Php">
+        <Php slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="TypeScript">
+        <TypeScriptPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
     </ContenedorSkill>
     <ContenedorSkill name="Otros">
-      <NpmPill class="w-20 h-20" />
-      <PnpmPill class="w-20 h-20" />
-      <GitPill class="w-20 h-20" />
-      <VercelPill class="w-40 h-20" />
+      <ItemSkill title="Npm">
+        <NpmPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Pnpm">
+        <PnpmPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Git">
+        <GitPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+    </ContenedorSkill>
+    <ContenedorSkill name="Hosting">
+      <ItemSkill title="Vercel">
+        <VercelPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="Netlify">
+        <NetlifyPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
+      <ItemSkill title="AWS">
+        <AmazonPill slot="icon" class="w-8 h-8" />
+      </ItemSkill>
     </ContenedorSkill>
   </div>
 </section>

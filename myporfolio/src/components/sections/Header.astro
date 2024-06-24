@@ -24,34 +24,47 @@ const ItemsNav = [
 ---
 
 <header
-  class="header-animate flex justify-center items-center w-full mx-auto border-b-2 z-10"
+  class="header-animate fixed flex justify-center items-center w-full mx-auto z-10 sm:text-base"
+  id="header"
 >
-  <nav
-    class="flex flex-row items-center justify-center gap-12 sm:gap-20 text-xl"
-  >
-    {
-      ItemsNav.map((link) => (
-        <a
-          class="transition hover:text-cyan-400/100 duration-200 ease-in-out text-sm sm:text-xl my-text"
-          aria-label={link.ariaLabel}
-          href={link.url}
-        >
-          {link.name}
-        </a>
-      ))
-    }
+  <nav class="">
+    <ul
+      class="flex flex-row items-center justify-center sm:gap-14 gap-4 text-xl text-center"
+    >
+      {
+        ItemsNav.map((item, index) => (
+          <li class="px-4 py-2">
+            <a
+              href={item.url}
+              aria-label={item.ariaLabel}
+              class="text-white sm:text-xl text-sm"
+            >
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </nav>
+
+  <div
+    id="menu-backdrop"
+    class={`
+    absolute bg-zinc-900  backdrop-blur-lg rounded
+    translate-x-[var(--left)] translate-y-[var(--top)]
+    left-0 top-0
+    w-[var(--width)] h-[var(--height)]
+    transition-all duration-500
+    ease-in-out opacity-0 -z-10
+  `}
+  >
+  </div>
 </header>
 
 <style>
-  .my-text {
-    text-shadow: 1px 0px 30px rgba(252, 252, 252, 0.877);
-  }
-
   .header-animate {
     animation: adapt-nav both;
     animation-timeline: scroll();
-    position: sticky;
     backdrop-filter: blur(10px);
     top: 0;
   }
@@ -65,3 +78,27 @@ const ItemsNav = [
     }
   }
 </style>
+
+<script>
+  const listItem = document.querySelectorAll("#header li");
+  const menuBackDrop = document.querySelector("#menu-backdrop") as HTMLElement;
+
+  listItem.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const { left, top, width, height } = item.getBoundingClientRect();
+
+      menuBackDrop.style.setProperty("--left", `${left}px`);
+      menuBackDrop.style.setProperty("--top", `${top}px`);
+      menuBackDrop.style.setProperty("--width", `${width}px`);
+      menuBackDrop.style.setProperty("--height", `${height}px`);
+
+      menuBackDrop.style.opacity = "1";
+      menuBackDrop.style.visibility = "visible";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      menuBackDrop.style.opacity = "0";
+      menuBackDrop.style.visibility = "hidden";
+    });
+  });
+</script>
