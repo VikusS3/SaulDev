@@ -11,7 +11,7 @@ interface Props {
   image: string;
   link: string;
   tecnologies: string[];
-  github?: string;
+  github: string;
 }
 
 const {
@@ -26,7 +26,7 @@ const {
 ---
 
 <article
-  class="flex flex-col justify-center items-center lg:flex-row gap-2 md:gap-10 max-w-[1100px] w-full"
+  class="flex flex-col lg:flex-row gap-2 md:gap-10 max-w-[1100px] w-full"
 >
   <picture class="max-w-[480px]">
     <div class="parent">
@@ -40,8 +40,8 @@ const {
       />
     </div>
   </picture>
-  <main class="flex flex-col gap-4 justify-between">
-    <section class="w-full mt-5">
+  <main class="flex flex-col gap-4 justify-center items-start">
+    <section class="w-full">
       {
         tecnologies && (
           <ul class="flex gap-5 mb-4 ">

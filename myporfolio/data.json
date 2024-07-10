@@ -10,15 +10,6 @@
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto2": {
-      "title": "Code Multi All",
-      "description": "La landingpage de una empresa de desarrollo web, me ayudo mucho a mejorar mis habilidades en TailwindCSS y descubre el maravilloso framework Web 'Astro'.",
-      "second_description": " Code Multi All es una empresa de desarrollo web que ofrece servicios de diseño, desarrollo y mantenimiento de sitios web. La página presenta información sobre la empresa, sus servicios, proyectos y contacto. Además, incluye un formulario de contacto para que los visitantes puedan enviar sus consultas y solicitudes de presupuesto.",
-      "image": "/code-multi-all-medium.webp",
-      "link": "https://code-multi-all.vercel.app/",
-      "github": "https://github.com/VikusS3/CodeMultiAll",
-      "tecnologias": ["Astro", "TailwindCSS"]
-    },
-    "proyecto3": {
       "title": "Restaurante Landing Page",
       "description": "Propuesta de una pagina web de un restaurante, la cual presenta los platos, servicios, y mucho más de un restaurante. Gracias a este proyecto perfeccione mis habilidades en Astro y TailwindCSS.",
       "second_description": "Los retos que me encontre al momento de desaroollar esta pagina web fue la creación de una interfaz atractiva y funcional, y haciendo uso correcto de los componentes de Astro",
@@ -26,6 +17,15 @@
       "link": "https://myrestaurante.vercel.app/",
       "github": "https://github.com/VikusS3/Restaurantes/tree/main/boomerang-landing",
       "tecnologias": ["Astro", "TailwindCSS"]
+    },
+    "proyecto3": {
+      "title": "Projects Whit React",
+      "description": "Proyectos realizados con la biblioteca React. Este proyecto me permitió mejorar mis habilidades en React, aprendiendo a trabajar con componentes, estados y props. Enfrenté desafíos como la creación de una interfaz atractiva y funcional, así como la implementación de un diseño responsivo.",
+      "second_description": "Desarrollé competencias en el manejo de componentes, estados y props, además de aprender a manipular JSON y mostrar datos dinámicos en la página. Esto me permitió mejorar significativamente mis habilidades en React.",
+      "image": "/projects-whit-react.webp",
+      "link": "https://projects-react-alpha.vercel.app/",
+      "github": "https://github.com/VikusS3/projects-react",
+      "tecnologias": ["React"]
     },
     "proyecto4": {
       "title": "LinkBio",
@@ -60,12 +60,12 @@
       "tecnologias": ["HTML", "CSS", "JavaScript"]
     },
     "proyecto8": {
-      "title": "Projects Whit React",
-      "description": "Proyectos realizados con la biblioteca React.",
-      "image": "/projects-whit-react.webp",
-      "link": "https://projects-react-alpha.vercel.app/",
-      "github": "https://github.com/VikusS3/projects-react",
-      "tecnologias": ["React"]
+      "title": "Code Multi All",
+      "description": "Landing page de una empresa de desarrollo web.",
+      "image": "/code-multi-all-medium.webp",
+      "link": "https://code-multi-all.vercel.app/",
+      "github": "https://github.com/VikusS3/CodeMultiAll",
+      "tecnologias": ["Astro", "TailwindCSS"]
     },
     "proyecto9": {
       "title": "TODO App",
