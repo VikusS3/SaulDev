@@ -23,7 +23,7 @@
       "description": "Proyectos realizados con la biblioteca React. Este proyecto me permitió mejorar mis habilidades en React, aprendiendo a trabajar con componentes, estados y props. Enfrenté desafíos como la creación de una interfaz atractiva y funcional, así como la implementación de un diseño responsivo.",
       "second_description": "Desarrollé competencias en el manejo de componentes, estados y props, además de aprender a manipular JSON y mostrar datos dinámicos en la página. Esto me permitió mejorar significativamente mis habilidades en React.",
       "image": "/projects-whit-react.webp",
-      "link": "https://projects-react-alpha.vercel.app/",
+      "link": "https://reactjsprojects.vercel.app/",
       "github": "https://github.com/VikusS3/projects-react",
       "tecnologias": ["React"]
     },
